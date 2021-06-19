@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    color: white;
+    background-color: rgb(58, 2, 2);
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu Mono';
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* Pre-defined classes*/
+.heading{
+    font-family: 'Mate SC';
+    color: rgb(153, 20, 20);
+    text-transform: capitalize;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+/*
+.heading::after{
+    position: absolute;
+    content: '';
+    bottom: -10%;
+    left: 45%;
+    width: 10%;
+    border-bottom: 4px solid rgb(153, 20, 20);
+}
+*/
+
+/* Navbar */
+
+.navbar{
+    width: 70%;
+    margin: 2.5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo h1 span{
+    font-size: 2rem;
+    color: rgb(129, 0, 0);
+    text-transform: uppercase;
+    background-color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo h1 span:nth-child(1){
+    animation: drop-letters 4s .1s infinite;
+}
+
+.logo h1 span:nth-child(2){
+    animation: drop-letters 4s .2s infinite;
+}
+
+.logo h1 span:nth-child(3){
+    animation: drop-letters 4s .3s infinite;
+}
+
+.logo h1 span:nth-child(4){
+    animation: drop-letters 4s .4s infinite;
+}
+
+.logo h1 span:nth-child(5){
+    animation: drop-letters 4s .5s infinite;
+}
+
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li{
+    padding: 0 2rem 0 2rem;
+    text-transform:capitalize;
+}
+
+.cool-link{
+    font-size: 1.75rem;
+    font-family: 'Ubuntu Mono';
+}
+
+.cool-link::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width .5s;
+}
+
+.cool-link:hover::after{
+    width: 100%;
+    height: 3px;
+    transition: width .5s;
+}
+
+.divider{
+    height: 2px;
+    margin: 3rem auto;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.39);
+    opacity: 70%;
+}
+
+/* Home Section */
+
+section#home{
+    padding-top: 7rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    font-size: 4rem;
+}
+
+section#home .home-all{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section#home .home-title{
+    max-width: 70%;
+    line-height: 9rem;
+}
+
+section#home .home-title span{
+    color: rgb(134, 12, 12);
+    font-weight: bolder;
+}
+
+section#home .home-animate{
+    animation: typing-animation 4s steps(11) infinite;
+    margin-top: 3rem;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid white;
+    width: 13ch;
+}
+
+section#home .home-img{
+    max-width: 30%;
+}
+
+section#home .home-img img{
+    width: 100%;
+    margin-top: 4rem;
+}
+
+/*About Section*/
+section#about{
+    padding-top: 18rem;
+    padding-bottom: 10rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    font-size: 2.3rem;
+}
+
+section#about .about-all{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section#about .about-text{
+    font-family: 'Poppins';
+    max-width: 50%;
+    line-height: 6rem;
+}
+
+section#about .about-img{
+    max-width: 40%;
+}
+
+section#about .about-img img{
+    width: 100%;
+}
+
+/* Skill Section */
+section#skill{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    font-size: 2.3rem;
+}
+
+section#skill .skill-all{
+    display: flex;
+    justify-content: space-between;
+}
+
+section#skill .my-skills{
+    margin-top: 2rem;
+    margin-left: 9rem;
+}
+
+section#skill .skill-img{
+    max-width: 40%;
+}
+
+section#skill .skill-img img{
+    max-width: 100%;
+}
+
+/*Contact Me section*/
+section#contact-me{
+    padding-top: 13rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    font-size: 2.3rem;
+}
+
+section#contact-me .contact-me-text h3{
+    font-family: 'Staatliches';
+    letter-spacing: 5px;
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+section#contact-me .copyright h3{
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+section#contact-me a:hover{
+    color: rgb(153, 20, 20);
+    transition: ease-in-out 0.4s;
+}
+
+/* Social Media icons*/
+.social-media-icons{
+    position: fixed;
+    top: 30rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+}
+
+.social-media-icons i{
+    margin-bottom: 2.5rem;
+    font-size: 1.5rem;
+}
+
+.social-media-icons .fa-youtube:hover{
+    color: red;
+}
+
+.social-media-icons .fa-discord:hover{
+    color: rgb(114, 137, 217);
+}
+
+.social-media-icons .fa-github:hover{
+    color: black;
+}
+
+.menu-bar{
+    display: none;
+}
+
+/* KeyFrames animnation */
+@keyframes typing-animation{
+    0%{
+        width: 0ch;
+    }
+
+    50%{
+        width: 11ch;
+    }
+
+    100%{
+        width: 0ch;
+    }
+
+}
+
+@keyframes drop-letters{
+    0%{
+        transform: translateY(0);
+    }
+
+    10%{
+        transform: translateY(o);
+    }
+
+    15%{
+        transform: translateY(-100%);
+    }
+
+    20%{
+        transform: translateY(0);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+
+}
+
+#menu-bar{
+    display: none;
+}
+
+/*Responsiveness*/
+@media screen and (max-width: 1500px) {
+    .social-media-icons{
+        top: 25rem;
+    }
+}
+
+@media screen and (max-width: 1430px) {
+    section#home .home-title{
+        max-width: 80%;
+    }
+
+    section#about .about-text{
+        font-size: 1.7rem;
+        line-height: 5rem;
+        text-align: left;
+    }
+
+}
+
+@media screen and (max-width: 1298px){
+    section#home .home-title{
+        line-height: 6rem;
+        font-size: 3.3rem;
+    }
+
+    section#home .home-animate{
+        margin-top: 2rem;
+        font-size: 3.3rem;
+    }
+
+}
+
+@media screen and (max-width: 1298px){
+    .nav-list li{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 900px){
+    section#home .home-title{
+        line-height: 5rem;
+        font-size: 2.2rem;
+    }
+
+    section#home .home-animate{
+        margin-top: 1rem;
+        font-size: 2.2rem;
+    }
+    
+    .nav-list{
+        margin-left: 2rem;
+    }
+
+    .nav-list li{
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+    .nav-list li a{
+        font-size: 1.5rem;
+    }
+
+    section#about .about-text{
+        min-width: 60%;
+        line-height: 2.5rem;
+        font-size: 1rem;
+        margin-left: 3rem;
+    }
+    
+    .social-media-icons{
+        top: 22rem;
+    }
+
+}
+
+@media screen and (max-width: 750px){
+
+    section#home .home-title{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    section#home .home-animate{
+        max-width: 100%;
+        text-align: right;
+    }
+
+    .home-img img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .nav-menu{
+        display: none;
+    }
+
+    .navbar{
+        display: block;
+    }
+
+    section#home .home-title{
+        font-size: 3.5rem;
+    }
+
+    section#home .home-animate{
+        font-size: 3.5rem;
+    }
+
+    section#about{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    section#about .about-text{
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    section#about .about-all{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section#skill{
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+
+    section#skill .skill-all{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section#skill .my-skills{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    section#contact-me{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    section#contact-me .contact-me-text h3{
+        font-size: 1.5rem;
+    }
+
+    .menu-bar{
+        display: inline-block;
+    }
+
+}
