@@ -2,7 +2,8 @@
 
 Welcome to my GitHub profile — a space where creativity meets code.
 
-I'm a passionate developer and designer who loves building visually unique, performance-optimized web experiences.
+Whether it's crafting dynamic UI, integrating immersive video, or building nature-inspired portfolios, I thrive on making interactive digital art. 
+With a love for storytelling, music, and motion, I bring together frontend flair and backend logic to create experiences that connect.
 
 ---
 
@@ -16,12 +17,6 @@ I'm a passionate developer and designer who loves building visually unique, perf
 ![Python](https://img.shields.io/badge/-Python-black?style=flat-square&logo=python)
 ![C++](https://img.shields.io/badge/-C++-black?style=flat-square&logo=cplusplus)
 ![Blender](https://img.shields.io/badge/-Blender-black?style=flat-square&logo=blender)
-
----
-
-## 📈 GitHub Stats
-
-![Parth's GitHub Stats](https://github-readme-stats.vercel.app/api?username=parthg2112&show_icons=true&theme=radical)
 
 ---
 
